@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/icon/dollar icon.png">
+    <script src="https://kit.fontawesome.com/6aceb9a76c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="">
+        <h1 id="balance-text">0฿</h1>
+    </header>
+
+    <main>
+        <div class="transaction">
+            <h1 id="transaction-text-header">Latest Activities</h1>
+            
+             <div class="activities-container"></div>
+             
+        </div>
+
+
+        <button id = "clear-button">Clear</button>
+        <button id = "add-list-button">Add activities</button>
+        <button id = "test-button">TEST</button>
+
+        <div class="pop-up-form" id="pop-up-form">
+            <div class="pop-up-inner">
+
+                <button id="close-form">X</button>
+                <h2>Amount</h2>
+
+                <input type="number" name="amount-form" id="amount-form">
+
+                <h2>Date</h2>
+
+                <input type="datetime-local" name="date-form" id="date-form">
+
+                <h2>Activities</h2>
+                <input type="text" name="activitiy-form" id="activity-form">
+
+                <h2>Category</h2>
+
+                <select id="category-form">
+                <option value="Salary">💰 Salary</option>
+                <option value="Transport">🚗 Transport</option>
+                <option value="Food">🍔 Food</option>
+                <option value="Other">📌 Other</option>
+                
+                </select>
+
+                <button id="submit-activities">Submit</button>
+                
+            </div>
+        </div>
+        
+    </main>
+     
+    <script src="/back-end/data.js"></script>
+    <script src="/front-end/UI.js"></script>
+    
+</body>
+</html>
