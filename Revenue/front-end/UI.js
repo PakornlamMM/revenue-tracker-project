@@ -9,7 +9,6 @@ const dateInput = document.getElementById("date-form");
 const activityInput = document.getElementById("activity-form");
 const categoryInput = document.getElementById("category-form")
 
-const testBtn = document.getElementById("test-button")
 const submitBtn = document.getElementById("submit-activities");
 const closeBtn = document.getElementById("close-form");
 const clearBtn = document.getElementById("clear-button")
@@ -142,10 +141,8 @@ function AppendList() {
     }
 } 
 
-function Test() {
-    addActivity(100, '2025-09-14T13:00','Salary',"Test")
-}
 
 testBtn.addEventListener('click', Test)
 submitBtn.addEventListener('click', AppendList);
+
 clearBtn.addEventListener('click', clearActivities);
